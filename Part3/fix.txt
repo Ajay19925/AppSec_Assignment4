@@ -1,0 +1,13 @@
+Can you read me out there?
+
+	To secure the data in transit, i have changed all the REST API calls from http: to https:
+	
+	Changes are done in below mentioned files:
+	- SecondFragment.kt
+	- ThirdFragment.kt
+	- CardScrollingActivity.kt
+	- ProductScrollingActivity.kt
+	- UseCard.kt
+	- GetCard.kt
+	- CardRecyclerViewAdapter.kt
+	- RecyclerViewAdapter.kt
