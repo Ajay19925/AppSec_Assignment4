@@ -1,0 +1,5 @@
+Shutting out the world:
+
+	- andriod.exported="false" (The exported attribute is used to define if an activity, service, or receiver in your app is accessible and can be launched from an external application.)
+	- We need to set andriod.exported to false globally or at each activity level.
+	- Remove intent-filter from each activity.

@@ -1,0 +1,34 @@
+- What are the two types of Intents?
+
+	There are two intents available in android as Implicit Intents and Explicit Intents.
+	Implicit Intent − It going to connect with out side application such as call, mail, phone,see any website ..etc.
+	Explicit Intent − It going to connect the internal world of an application such as start activity or send data between two activities.
+
+- Which of the two types of Intents are more secure?
+
+	Explicit intent is more secure than implicit intent as it will only connect to the internal world of an application.
+
+- What type of Intent is shown on lines 69 to 73 of SecondFragment.kt?
+
+	Implicit Intent
+
+- What type of Intent is shown on lines 68 to 70 of ThirdFragment.kt?
+
+	Explicit Intent
+
+- Which of these two Intents is the proper way to do an Intent?
+
+	Explicit Intent is a proper way which is used in ThirdFragment.kt
+
+Fixing Intent:
+
+	Issue and Reason:
+		SecondFragment.kt is using Implicit Intent. I have changed it to Explicit Intent. 
+		Before The fix when Registration is done, we will be navigated to 'https://appsecclass.report/api/index' site.
+		After the fix when registration is done, we will be navigated to ProductscrollingActivity.
+
+	Steps Taken:
+		- Comment out lines 69 to 71 from 'SecondFragment.kt'
+		- ADD line 'var intent = Intent(activity, ProductScrollingActivity::class.java)' below the commented code.
+		- Build the app
+
