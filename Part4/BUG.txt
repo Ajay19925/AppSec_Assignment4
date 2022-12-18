@@ -1,0 +1,16 @@
+Oops, was that card yours?
+
+	Issue: 
+		- Vulnerability allows any user to use any giftcard put request. 
+		- So a hacker can access/use a gift card belonging to someone else by just manipulating the REST API put request.
+	
+	Reason:
+		
+		- Lack of aunthencation checking in the use gift card functionality.
+		- Only Authorization token key and gift card number is validated.
+
+	Fix:
+	
+		- We need put a check to validate whether the gift card provided is associated with the loggedin user. If true then the response must be success or a failure.
+		- One way to acheive this is to validate whether the Authorization token matches the card owner's token.
+		- Another way is to add verification at server side by validating userid of giftcard provided and loggedin users id. If both doesn't match, then we can send a failed response. 
