@@ -1,0 +1,13 @@
+Removing unneeded permissions:
+
+	- Remove line 7 to 10 from 'AndroidManifest.xml' file.
+
+Removing metric collection API calls:
+
+	- Remove '\GiftcardSite\app\src\main\java\com\example\giftcardsite\api\service\UserInfo.kt'
+	- Remove dependant file 'GiftcardSite\app\src\main\java\com\example\giftcardsite\api\model\Reporter.kt'
+
+Removing interaction with sensors:
+	
+	- Remove all location and sensor related calls from 'ProductScrollingActivity.kt'
+	- Remove all location and sensor related calls from 'CardScrollingActivity.kt' 
